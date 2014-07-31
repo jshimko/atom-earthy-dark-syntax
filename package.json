@@ -1,0 +1,11 @@
+{
+  "name": "earthy-dark-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Dark earthtone color theme for syntax highlighting.",
+  "repository": "https://github.com/jshimko/atom-earthy-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
