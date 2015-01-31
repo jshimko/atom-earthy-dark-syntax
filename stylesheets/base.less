@@ -71,8 +71,7 @@
 
 .entity {
   &.name.type {
-    color: @light-orange;
-    text-decoration: underline;
+    color: #5C82A3;
   }
 
   &.other.inherited-class {
@@ -96,7 +95,7 @@
   }
 
   &.other.unit {
-    color: @orange;
+    color: @blue;
   }
 }
 
@@ -105,34 +104,46 @@
 }
 
 .constant {
-  color: @orange;
+  color: @constant;
 
   &.character.escape {
-    color: @cyan;
+    color: @escape;
   }
 
   &.numeric {
-    color: @orange;
+    color: @numeric-value;
   }
 
   &.other.color {
     color: @cyan;
+
+    &.rgb-value {
+      color: @rgb-value;
+    }
   }
 
   &.other.symbol {
     color: @green;
   }
+
+  &.rgb-value {
+    color: @rgb-value;
+  }
+
+  &.font-name {
+    color: @font-name;
+  }
 }
 
 .variable {
-  color: @red;
+  color: @variable;
 
   &.interpolation {
     color: darken(@red, 10%);
   }
 
   &.parameter.function {
-    color: @syntax-text-color;
+    color: @function-args;
   }
 }
 
@@ -142,7 +153,7 @@
 }
 
 .string {
-  color: @green;
+  color: @string;
 
 
   &.regexp {
@@ -164,7 +175,10 @@
       color: @light-gray;
     }
 
-    &.string,
+    &.string {
+      color: @string;
+    }
+
     &.variable,
     &.parameters,
     &.array {
@@ -199,17 +213,21 @@
   }
 
   &.function  {
-    color: @cyan;
+    color: @function-support;
 
     &.any-method {
       color: @blue;
     }
   }
+
+  &.property-name {
+      color: @property-name;
+  }
 }
 
 .entity {
   &.name.function {
-    color: @blue;
+    color: @function-name;
   }
 
   &.name.class, &.name.type.class {
@@ -311,3 +329,7 @@
 .editor.mini .scroll-view {
   padding-left: 1px;
 }
+
+@import "html";
+@import "css";
+@import "js";
